@@ -27,7 +27,7 @@ RUN ${build_command}
 
 # Generate SSL certificate
 RUN mkdir /app/ssl
-RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /app/ssl/certificate.key -out /app/ssl/certificate.crt -subj="/O=Moodle"
+RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /app/ssl/certificate.key -out /app/ssl/certificate.crt -subj="/O=RaevskySchool"
 
 ## SERVE STAGE
 FROM nginx:alpine as serve-stage

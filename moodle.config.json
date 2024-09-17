@@ -1,13 +1,13 @@
 {
-    "app_id": "com.moodle.moodlemobile",
-    "appname": "Moodle Mobile",
+    "app_id": "ru.raevskyschool.coursesmobile",
+    "appname": "Raevsky courses",
     "versioncode": 45000,
     "versionname": "4.5.0",
     "cache_update_frequency_usually": 420000,
     "cache_update_frequency_often": 1200000,
     "cache_update_frequency_sometimes": 3600000,
     "cache_update_frequency_rarely": 43200000,
-    "default_lang": "en",
+    "default_lang": "ru",
     "languages": {
         "af": "Afrikaans",
         "ar": "العربية",
@@ -68,39 +68,31 @@
         "zh-tw": "正體中文"
     },
     "wsservice": "moodle_mobile_app",
-    "demo_sites": {
-        "student": {
-            "url": "https://school.moodledemo.net",
-            "username": "student",
-            "password": "moodle2024"
-        },
-        "teacher": {
-            "url": "https://school.moodledemo.net",
-            "username": "teacher",
-            "password": "moodle2024"
-        }
-    },
+    "demo_sites": {},
     "defaultZoomLevel": "none",
     "zoomlevels": {
         "none": 100,
         "medium": 110,
         "high": 120
     },
-    "customurlscheme": "moodlemobile",
-    "sites": [],
+    "customurlscheme": "coursesmobile",
+    "sites": [{
+        "name": "courses.raevskyschool.ru",
+        "url": "https://courses.raevskyschool.ru/"
+    }],
     "multisitesdisplay": "",
     "sitefindersettings": {},
     "onlyallowlistedsites": false,
     "forcedefaultlanguage": false,
-    "privacypolicy": "https://moodle.net/moodle-app-privacy/",
+    "privacypolicy": "https://courses.raevskyschool.ru/moodle-app-privacy/",
     "notificoncolor": "#f98012",
     "enableanalytics": false,
     "enableonboarding": true,
     "forceColorScheme": "",
     "forceLoginLogo": false,
-    "ioswebviewscheme": "moodleappfs",
+    "ioswebviewscheme": "coursesappfs",
     "appstores": {
-        "android": "com.moodle.moodlemobile",
+        "android": "ru.raevskyschool.coursesmobile",
         "ios": "id633359593"
     },
     "wsrequestqueuelimit": 10,

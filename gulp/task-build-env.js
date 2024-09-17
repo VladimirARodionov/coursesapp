@@ -64,8 +64,8 @@ class BuildEnvTask {
     run(done) {
         const envFile = resolve(__dirname, '../src/assets/env.json');
         const env = {
-            config: getConfig(process.env.NODE_ENV || 'development'),
-            build: getBuild(process.env.NODE_ENV || 'development'),
+            config: getConfig(process.env.NODE_ENV || 'production'),
+            build: getBuild(process.env.NODE_ENV || 'production'),
         };
 
         writeFile(envFile, JSON.stringify(env), done);
